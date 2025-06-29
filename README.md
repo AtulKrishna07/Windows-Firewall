@@ -4,6 +4,7 @@ Configure and test firewall rules on a Windows machine using Windows Defender Fi
 Tool Used
 - Windows Defender Firewall with Advanced Security
 - PowerShell
+- VmWare (For virtual machine)
 
 Steps Performed
 1. Listed current firewall rules using PowerShell.
