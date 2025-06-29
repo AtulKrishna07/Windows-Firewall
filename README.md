@@ -15,8 +15,8 @@ Steps Performed
 ## Commands Used
 
 powershell
--Get-NetFirewallRule | Where-Object { $_.Enabled -eq 'True' }
--New-NetFirewallRule -DisplayName "Block_Telnet_In" -Direction Inbound -Protocol TCP -LocalPort 23 -Action Block
--Test-NetConnection -ComputerName 127.0.0.1 -Port 23
--New-NetFirewallRule -DisplayName "Allow_SSH_In" -Direction Inbound -Protocol TCP -LocalPort 22 -Action Allow
--Remove-NetFirewallRule -DisplayName "Block_Telnet_In"
+- Get-NetFirewallRule | Where-Object { $_.Enabled -eq 'True' }
+- New-NetFirewallRule -DisplayName "Block_Telnet_In" -Direction Inbound -Protocol TCP -LocalPort 23 -Action Block
+- Test-NetConnection -ComputerName 127.0.0.1 -Port 23
+- New-NetFirewallRule -DisplayName "Allow_SSH_In" -Direction Inbound -Protocol TCP -LocalPort 22 -Action Allow
+- Remove-NetFirewallRule -DisplayName "Block_Telnet_In"
